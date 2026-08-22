@@ -1,4 +1,4 @@
-name: Deploy Notification To production phcode.dev
+name: Deploy Notification To production web.phcode.dev
 
 on:
   repository_dispatch:
@@ -44,4 +44,4 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./public
-          cname: phcode.dev
+          cname: web.phcode.dev
